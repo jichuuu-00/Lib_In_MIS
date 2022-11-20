@@ -32,7 +32,6 @@ SECRET_KEY = env('SECRET_KEY')
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-(&g_*i9c)2-ed(k&hlkk#!!pt_lzqvysg^!$o+j&y*-d25ex7t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -87,11 +86,15 @@ WSGI_APPLICATION = 'LIM.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+DATABASES = DATABASES = {
+	'default': {
+    	'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'dongdong',
+        'USER': 'root',
+        'PASSWORD': '0417',
+        'HOST': 'localhost',
+        'PORT': '3306',
+     }
 }
 
 
