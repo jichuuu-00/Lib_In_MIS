@@ -2,9 +2,11 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
+    <!--
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    -->
     <title>동동서관/ Book List</title>
     <link rel="stylesheet" href="../../../static/css/book_list.css">
 </head>
@@ -13,7 +15,7 @@
         <div id="header">
             <div class="nav">
                 <ul>
-                    <a href="#"><li>로그아웃</li></a> <!-- 다시 로그인 화면으로 -->
+                    <a href="../../../accountapp/templates/mem_login.html"><li>로그아웃</li></a> <!-- 다시 로그인 화면으로 -->
                     <li>|</li>
                     <a href="#"><li>대여/반납 확인</li></a>
                 </ul>
@@ -42,7 +44,7 @@
                     </div>
                     <div class="text">
                         <h2>{{ book.title }}</h2>
-                        <p>책 저자</p>  <!-- 저자 이름은 없었나 ..? -->
+                        <p>{{ book.edition }}</p>
                         <div class="button">
                             <a href="#">
                                 <div class="btnText">
