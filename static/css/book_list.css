@@ -125,3 +125,11 @@ form {
     width: 80%;
     margin: 0 auto;
 }
+
+.Txt {
+    margin-left: 48%;
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: 600;
+
+}
