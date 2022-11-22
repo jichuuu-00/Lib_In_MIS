@@ -52,3 +52,52 @@ form {
     font-size: 25px;
     font-weight: 600;
 }
+
+.description {
+    background-color: #717f64;
+    display: block;
+    width: 35%;
+    height: 150px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.description::-webkit-scrollbar {
+    display: none;
+}
+
+.most_info ul li {
+    list-style: none;
+}
+
+.content {
+    margin-top: 10%;
+}
+
+.title {
+    font-size: 28px;
+    color: #f2eedd;
+    font-weight: 900;
+    margin-left: 43%;
+}
+
+.book_img img {
+    background-color: #a5ae9d;
+    width: 250px;
+    height: 300px;
+    margin-left: 41%;
+    margin-top: 10%;
+}
+
+.most_info {
+    margin-left: 38%;
+}
+
+.most_info ul li {
+    font-size: 17px;
+    width: fit-content;
+    margin-top: 15px;
+    font-weight: 700;
+}
