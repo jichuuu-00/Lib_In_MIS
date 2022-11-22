@@ -2,11 +2,6 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <!--
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    -->
     <title>동동서관/ Book List</title>
     <link rel="stylesheet" href="../../../static/css/book_list.css">
 </head>
@@ -27,8 +22,10 @@
         </div>
         <div class="Txt">도서 검색</div>
         <form action="" method="get">
-            <input type="text" name="q" value="{{ q }}"/>
-            <input type="submit" value="검색"/>
+            <input type="text" name="q" value="{{ q }}" id="search_txt"/>
+            <label for="search"><img src="../../../static/img/search.png" class="search_png">
+                <input type="submit" id="search"/>
+            </label>
         </form>
 
         <div class="content">

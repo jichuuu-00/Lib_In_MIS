@@ -131,5 +131,26 @@ form {
     margin-bottom: 15px;
     font-size: 25px;
     font-weight: 600;
+}
 
+.search_png {
+    width: 25px;
+    cursor: pointer;
+    margin: 15px;
+    margin-top: 2px;
+}
+
+#search {
+    background-color: #717f64;
+    border: none;
+    color: #717f64;
+    float: right;
+}
+
+#search_txt {
+    float: left;
+}
+
+form {
+    clear: both;
 }
