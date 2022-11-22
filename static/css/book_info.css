@@ -1,0 +1,54 @@
+body {
+    background-color: #717f64;
+}
+
+.logo {
+    height: 200px;
+}
+
+.logo > img {
+    width: 300px;
+    cursor: pointer;
+}
+
+form > input:first-child {
+    background-color: #f2eedd;
+    border-color: #f2eedd;
+    width: 40%;
+    height: 30px;
+    border-radius: 20px;
+    margin-left: 450px;
+}
+
+form {
+    background-color: #717f64;
+}
+
+.search_png {
+    width: 25px;
+    cursor: pointer;
+    margin: 15px;
+    margin-top: 2px;
+}
+
+#search {
+    background-color: #717f64;
+    border: none;
+    color: #717f64;
+    float: right;
+}
+
+#search_txt {
+    float: left;
+}
+
+form {
+    clear: both;
+}
+
+.Txt {
+    margin-left: 48%;
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: 600;
+}

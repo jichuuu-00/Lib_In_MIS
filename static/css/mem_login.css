@@ -1,0 +1,94 @@
+body, html, #wrapper {
+    height: 100%;
+    margin: 0;
+}
+
+.ivory {
+    background-color: #f2eedd;
+    width: 1000px;
+    zoom: 1.5;
+}
+
+.green {
+    width: 550px;
+    background-color: #717f64;
+}
+
+.green img {
+    margin: 45% auto;
+    width: 450px;
+}
+
+#wrapper {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: #717f64;
+}
+
+html {
+    color: #717f64;
+}
+
+.ivory h3 {
+    font-size: 24px;
+    font-weight: 550;
+    margin-bottom: 10px;
+}
+
+.ivory p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+.login-form {
+    margin-left: 20%;
+    margin-top: 10%;
+}
+
+.lg-input input {
+    width: 300px;
+    padding: 9px 20px;
+    text-align: left;
+    outline: 0;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 300;
+    transition: all 0.3s ease 0s;
+    margin-bottom: 7px;
+    margin-top: 7px;
+    border-color: #ffffff;
+}
+
+.button button {
+    border-radius: 6px;
+    border: 0;
+    padding: 6px 28px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #717f64;
+    color: #ffffff;
+    box-shadow: 0 0 0 rgb(0 0 0 / 16%);
+}
+
+.create {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #333333;
+}
+
+.login-type a:last-child {
+    color: #a5ae9d;
+}
+
+.login-type a:first-child {
+    font-weight: 600;
+}

@@ -2,36 +2,71 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>동동서관/ Book List</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../static/css/book_list.css">
 </head>
 <body>
+    <div id="wrapper">
+        <div id="header">
+            <div class="nav">
+                <ul>
+                    <li>{{ Member.mem_name }}님 안녕하세요!</li>
+                    <a href="../../../accountapp/templates/mem_login.html"><li>로그아웃</li></a> <!-- 다시 로그인 화면으로 -->
+                </ul>
+            </div>
+            <div class="logo">
+                <img src="../../../static/img/lib_logo.png" alt="">
+            </div>
+            <div class="banner" style="display: flex; background-color: #f2eedd; width: 100%;">
+                <img src="../../../static/img/lib_img.jpg" style="display: inline-block; width: 90%; margin-left: 5%;">
+            </div>
+        </div>
+        <div class="content_nav">
+            <div class="dot"> </div>
+            <ul>
+                <a href=""><li>도서 검색</li></a>
+                <a href=""><li>도서 신청</li></a>
+                <a href=""><li>대여 / 반납 확인</li></a>
+            </ul>
+        </div>
+        <hr>
+        <form action="" method="get">
+            <input type="text" name="q" value="{{ q }}" id="search_txt"/>
+            <label for="search"><img src="../../../static/img/search.png" class="search_png">
+                <input type="submit" id="search"/>
+            </label>
+        </form>
 
-    <form action="" method="get">
-        <input type="text" name="q" value="{{ q }}" />
-        <input type="submit" value="검색" />
-    </form>
-
-    <table class="table table-bordered table-hover">
-        <tbody>
+        <div class="content">
             {% for book in book_list %}
-                <tr>
-                    <td>
+            <ul class="card">
+                <li>
+                    <div class="img">
                         {% if book.photo %}
-                            <img src="{{ book.photo.url }}" style="width: 100px;" />
+                            <img src="{{ book.photo.url }}" style="width: 100px;">
                         {% else %}
-                            No Photo
+                            <!-- 등록된 표지 이미지가 없을 경우 -->
+                            <img src="../../../static/img/warning.png" style="background-color: #19250e;">
                         {% endif %}
-                    </td>
-                    <td>
-                        {{ book.title }}
-                    </td>
-                </tr>
+                    </div>
+                    <div class="text">
+                        <h2>{{ book.title }}</h2>
+                        <p>{{ book.edition }}</p>
+                        <div class="button">
+                            <a href={% url 'book:searchbook' book.title %}>
+                                <div class="btnText">
+                                    상세 보기
+                                </div>
+                                <div class="btnTwo">
+                                    <p class="btnText2">GO!</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
             {% endfor %}
-        </tbody>
-    </table>
+        </div>
+    </div>
 </body>
 </html>

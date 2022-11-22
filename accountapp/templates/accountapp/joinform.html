@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Lib-join</title>
+    <link rel="stylesheet" href="../../../static/css/join.css">
+</head>
+<body>
+<div id="wrap">
+    <div id="header" class="Joinform">
+        <h1 id="top_logo">
+            <a href="mem_login.html" class="h_logo">
+                <span class="blind">
+                    <img src="../../../static/img/lib_logoblack.png" alt="">
+                </span>
+            </a>
+        </h1>
+    </div>
+
+    <form action="{% url 'accountapp:create' %}" id="join_form" method="POST">
+        {% csrf_token %}
+        <div id="container">
+            <div id="content">
+                <div class="join_content">
+                    <div class="row_group">
+                        <div class="join_row">
+                            <h3 class="join_title">
+                                <label for="username">이름</label>
+                            </h3>
+                            <span class="id_box id">
+							    <input type="text" name="mem_name" id="username" class="int" maxlength="20">
+                            </span>
+                        </div>
+
+                        <div class="join_row">
+                            <h3 class="join_title">
+                                <label for="id">아이디</label>
+                            </h3>
+                            <span class="id_box id">
+							    <input type="text" name="ID" id="id" class="int" maxlength="20">
+                            </span>
+                            <span class="error_box" id="idMsg" style="display:none" aria-live="assertive"></span>
+                            <span class="error_box" id="idMsg" style="display:none" aria-live="assertive"></span>
+                            <div class="errMsg" style="color: red;"></div>
+                        </div>
+
+                        <div class="join_row">
+                            <h3 class="join_title">
+                                <label for="password1">비밀번호</label>
+                            </h3>
+                            <span class="id_box int_pass">
+							    <input type="password" name="PW" id="password1" class="int" maxlength="20">
+                                <span class="lbl">
+                                    <span id="pswd1Span" class="step_txt"></span>
+                                </span>
+						    </span>
+                        </div>
+                        <div class="join_row join_gender">
+                            <h3 class="join_title">
+                                <label for="gender">
+                                    성별
+                                </label>
+                            </h3>
+                            <span>
+                                <select name="mem_gender" class="id_box">
+                                    <option value="man">남자</option>
+                                    <option value="woman">여자</option>
+                                </select>
+                            </span>
+                        </div>
+                        <div class="join_row join_email">
+                            <h3 class="join_title">
+                                <label for="email">
+                                    이메일
+                                </label>
+                            </h3>
+                            <span class="id_box int_email box_right_space">
+							    <input type="text" id="email" name="mem_email" class="int" maxlength="100">
+						    </span>
+                        </div>
+                        <div class="join_row join_email">
+                            <h3 class="join_title">
+                                <label for="phone">
+                                    전화번호
+                                </label>
+                            </h3>
+                            <span class="id_box">
+							    <input type="text" id="phone" name="mem_phone" placeholder="000-0000-0000" class="int" maxlength="100">
+						    </span>
+                        </div>
+                        <div class="join_row join_email">
+                            <h3 class="join_title">
+                                <label for="address">
+                                    주소
+                                </label>
+                            </h3>
+                            <span class="id_box">
+							    <input type="text" id="address" name="mem_address" placeholder="서울시" class="int" maxlength="100">
+						    </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn_area">
+                <a href={% url 'accountapp:login' %} id="btnJoin" class="btn_type btn_primary">
+                    <span>가입하기</span>
+                </a>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div id="footer">
+    <address>
+        <em><a href="" class="logo"><span class="blind"></span></a></em>
+        <em class="copy">고려대학교 세종캠퍼스</em>
+        <em class="u_cri">©</em>
+        <a href="#" class="u_cra">동동서관</a>
+    </address>
+</div>
+</body>
+</html>

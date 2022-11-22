@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Lib-login</title>
+    <link rel="stylesheet" href="../../../static/css/mem_login.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div class="green">
+            <img src="../../../static/img/lib_logo.png" alt="">
+        </div>
+        <div class="ivory">
+            <div class="login-form">
+                <h3>
+                    동동서관에 로그인 하세요
+                </h3>
+                <p>도서관 관리 Team Project</p>
+                <div class="login-type">
+                    <a href="mem_login.html">회원 로그인</a>
+                    |
+                    <a href="mgr_login.html">관리자 로그인</a>
+                </div>
+                <form action="{% url 'book:book' %}" method="post">
+                    {% csrf_token %}
+                    {{ form }}
+                <div class="lg-input">
+                    <input type="text" placeholder="ID" name="id">
+                    <br>
+                    <input type="password" placeholder="password" name="pw">
+                </div>
+                <div class="button">
+                    <button type="submit">로그인</button>
+                </div>
+                <a href="joinform.html"><div class="create">회원가입</div></a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
