@@ -162,11 +162,11 @@ form {
 }
 
 .content_nav ul {
-    margin-left: 30%;
+    margin-left: 35%;
 }
 
 .content_nav ul li {
-    margin-right: 80px;
+    margin-right: 100px;
 }
 
 .content_nav ul a {
@@ -184,7 +184,7 @@ form {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    margin-left: 36%;
+    margin-left: 41%;
 }
 
 .banner {
