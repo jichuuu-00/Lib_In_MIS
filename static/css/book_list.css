@@ -154,3 +154,25 @@ form {
 form {
     clear: both;
 }
+
+.content_nav {
+    height: 150px;
+    margin-top: 20%;
+}
+
+.content_nav ul {
+    margin-left: 30%;
+}
+
+.content_nav ul li {
+    margin-right: 80px;
+}
+
+.content_nav ul a {
+    color: #333333;
+    font-size: 23px;
+}
+
+.content_nav ul a:first-child {
+    font-weight: 700;
+}

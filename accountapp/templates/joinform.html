@@ -36,7 +36,7 @@
                                 <label for="id">아이디</label>
                             </h3>
                             <span class="id_box id">
-							    <input type="text" name="ID" id="id" class="int" maxlength="20">
+							    <input type="text" name="id" id="id" class="int" maxlength="20">
                             </span>
                             <span class="error_box" id="idMsg" style="display:none" aria-live="assertive"></span>
                             <span class="error_box" id="idMsg" style="display:none" aria-live="assertive"></span>
@@ -48,7 +48,7 @@
                                 <label for="password1">비밀번호</label>
                             </h3>
                             <span class="id_box int_pass">
-							    <input type="password" name="PW" id="password1" class="int" maxlength="20">
+							    <input type="password" name="pw" id="password1" class="int" maxlength="20">
                                 <span class="lbl">
                                     <span id="pswd1Span" class="step_txt"></span>
                                 </span>
@@ -102,8 +102,10 @@
             </div>
 
             <div class="btn_area">
-                <a href="mem_login.html" id="btnJoin" class="btn_type btn_primary">
-                    <span>가입하기</span>
+                <a href="mem_login.html">
+                    <button type="button" id="btnJoin" class="btn_type btn_primary" onclick="test()">
+                        <span>가입하기</span>
+                    </button>
                 </a>
             </div>
         </div>
@@ -118,5 +120,12 @@
         <a href="#" class="u_cra">동동서관</a>
     </address>
 </div>
+
+<script>
+    function test() {
+        alert("회원가입이 완료되었습니다!" +
+            "로그인 페이지로 이동합니다.");
+    }
+</script>
 </body>
 </html>
