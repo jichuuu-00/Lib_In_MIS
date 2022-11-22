@@ -17,10 +17,8 @@
             </div>
             <div class="logo">
                 <img src="../../../static/img/lib_logo.png" alt="">
-                <hr>
             </div>
         </div>
-        <div class="Txt">도서 검색</div>
         <form action="" method="get">
             <input type="text" name="q" value="{{ q }}" id="search_txt"/>
             <label for="search"><img src="../../../static/img/search.png" class="search_png">
@@ -58,27 +56,6 @@
             </ul>
             {% endfor %}
         </div>
-
-    <!--
-        <table class="table table-bordered table-hover">
-            <tbody>
-                {% for book in book_list %}
-                    <tr>
-                        <td>
-                            {% if book.photo %}
-                                <img src="{{ book.photo.url }}" style="width: 100px;" />
-                            {% else %}
-                                No Photo
-                            {% endif %}
-                        </td>
-                        <td>
-                            {{ book.title }}
-                        </td>
-                    </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-        -->
     </div>
 </body>
 </html>
