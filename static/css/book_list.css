@@ -153,6 +153,7 @@ form {
 
 form {
     clear: both;
+    margin-top: 100px;
 }
 
 .content_nav {
@@ -174,5 +175,14 @@ form {
 }
 
 .content_nav ul a:first-child {
-    font-weight: 700;
+    font-weight: 900;
+    color: #f2eedd;
+}
+
+.dot {
+    background: #f2eedd;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 36%;
 }
