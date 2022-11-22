@@ -1,0 +1,12 @@
+body {
+    background-color: #717f64;
+}
+
+.logo {
+    height: 200px;
+}
+
+.logo > img {
+    width: 300px;
+    cursor: pointer;
+}
