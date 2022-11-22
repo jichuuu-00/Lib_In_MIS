@@ -1,0 +1,147 @@
+body {
+    background-color: #717f64;
+}
+
+li {
+    list-style: none;
+    float: left;
+    margin-right: 25px;
+}
+
+.nav > ul > a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #333333;
+    font-weight: 700;
+}
+
+.nav > ul {
+    float: right;
+    width: 250px;
+}
+
+.logo {
+    height: 200px;
+}
+
+.logo > img {
+    width: 300px;
+    cursor: pointer;
+}
+
+.dot {
+    background: #f2eedd;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 48%;
+}
+
+.banner {
+    display: flex;
+    background-color: #f2eedd;
+    width: 100%;
+}
+
+.banner img {
+    display: inline-block;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.content_nav {
+    height: 150px;
+    margin-top: 20%;
+}
+
+.content_nav ul {
+    margin-left: 30%;
+}
+
+.content_nav ul li {
+    margin-right: 80px;
+}
+
+.content_nav ul a {
+    color: #333333;
+    font-size: 23px;
+}
+
+.content_nav ul > .middle {
+    font-weight: 900;
+    color: #f2eedd;
+}
+
+.content {
+    background: #f2eedd;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.join_title {
+    margin: 19px 0 8px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.id_box {
+    display: inline-block;
+    position: relative;
+    width: 60%;
+    height: 70px;
+    padding: 20px 110px 10px 14px;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin-left: 25%;
+}
+
+.int {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 29px;
+    padding-right: 25px;
+    line-height: 29px;
+    border: none;
+    font-size: 15px;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+h3 > label {
+    margin-left: 27%;
+}
+
+h3 {
+    padding-top: 10%;
+}
+
+.join_row:first-child {
+    margin-top: 10%;
+}
+
+.join_row {
+    margin-top: -10%;
+}
+
+.form_title {
+    color: #f2eedd;
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 42.5%;
+    margin-top: 15%;
+}
+
+.btn {
+    border-color: #717f64;
+    border-radius: 10px;
+    width: 110px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #717f64;
+    margin-left: 40%;
+    margin-bottom: 7%;
+    margin-top: 7%;
+    color: #f2eedd;
+}

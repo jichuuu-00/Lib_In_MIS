@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>도서 신청</title>
+    <link rel="stylesheet" href="../../../static/css/book_request.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div class="nav">
+                <ul>
+                    <li>{{ Member.mem_name }}님 안녕하세요!</li>
+                    <a href="../../../accountapp/templates/mem_login.html"><li>로그아웃</li></a> <!-- 다시 로그인 화면으로 -->
+                </ul>
+            </div>
+            <div class="logo">
+                <img src="../../../static/img/lib_logo.png" alt="">
+            </div>
+            <div class="banner">
+                <img src="../../../static/img/lib_img.jpg">
+            </div>
+        </div>
+        <div class="content_nav">
+            <div class="dot"> </div>
+            <ul>
+                <a href=""><li>도서 검색</li></a>
+                <a href="" class="middle"><li>도서 신청</li></a>
+                <a href=""><li>대여 / 반납 확인</li></a>
+            </ul>
+        </div>
+        <hr>
+
+        <div class="form_title">도서 신청 양식</div>
+        <div class="content">
+            <div class="join_row">
+                <h3 class="join_title">
+                    <label for="mem_code">회원코드</label>
+                </h3>
+                <span class="id_box int_pass">
+                <!--
+                    {% for member in member %} -->
+                    <input type="text" name="mem_code" id="mem_code" class="int" maxlength="20" value="{{ member.mem_code }}">
+                    <!--
+                    {% endfor %} -->
+                </span>
+            </div>
+
+            <div class="join_row">
+                <h3 class="join_title">
+                    <label for="title">책 제목</label>
+                </h3>
+                <span class="id_box int_pass">
+                    <input type="text" name="title" id="title" class="int" maxlength="20">
+                </span>
+            </div>
+
+            <div class="join_row">
+                <h3 class="join_title">
+                    <label for="author_name">저자</label>
+                </h3>
+                <span class="id_box int_pass">
+                    <input type="text" name="author_name" id="author_name" class="int" maxlength="20">
+                </span>
+            </div>
+            <button type="button" class="btn" onclick="test()">
+                신청
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function test() {
+            alert("신청되었습니다.");
+        }
+    </script>
+</body>
+</html>
