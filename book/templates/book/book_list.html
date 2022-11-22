@@ -24,7 +24,7 @@
         <form action="" method="get">
             <input type="text" name="q" value="{{ q }}" id="search_txt"/>
             <label for="search"><img src="../../../static/img/search.png" class="search_png">
-                <input type="submit" id="search" formaction="../../../book/templates/book/after_search.html"/>
+                <input type="submit" id="search"/>
             </label>
         </form>
 
@@ -44,7 +44,7 @@
                         <h2>{{ book.title }}</h2>
                         <p>{{ book.edition }}</p>
                         <div class="button">
-                            <a href="#">
+                            <a href="book_info.html">
                                 <div class="btnText">
                                     상세 보기
                                 </div>
