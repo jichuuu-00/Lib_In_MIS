@@ -1,11 +1,12 @@
 from django.shortcuts import render
 
 from django.shortcuts import render
-from .models import Book
+from .models import Book, BookInfo
+
 
 # 호출 당시에 현재 요청에 모든 내역을 인자로 전달 받음
 def book_list(request):
-    qs = Book.objects.all()
+    qs = BookInfo.objects.all()
     q = request.GET.get('q', '')
     if q:
         qs = qs.filter(title__icontains=q)
