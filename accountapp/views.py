@@ -7,3 +7,6 @@ def login(request):
 
 def login_mgr(request):
     return render(request, 'accountapp/mgr_login.html')
+
+def join(request):
+    return render(request, 'accountapp/joinform.html')
