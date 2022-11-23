@@ -52,3 +52,117 @@ form {
     font-size: 25px;
     font-weight: 600;
 }
+
+.description {
+    background-color: #717f64;
+    display: block;
+    width: 35%;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.most_info ul li {
+    list-style: none;
+}
+
+.content {
+    margin-top: 10%;
+}
+
+.title {
+    font-size: 28px;
+    color: #f2eedd;
+    font-weight: 900;
+    margin-left: 43%;
+}
+
+.book_img img {
+    background-color: #a5ae9d;
+    width: 250px;
+    height: 300px;
+    margin-left: 41%;
+    margin-top: 10%;
+}
+
+.most_info {
+    margin-left: 38%;
+}
+
+.most_info ul li {
+    font-size: 17px;
+    width: fit-content;
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+.dis_text {
+    font-size: 17px;
+    font-weight: 700;
+    margin-left: 32%;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.description {
+    margin-left: 32%;
+    margin-bottom: 100px;
+}
+
+#btn {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+button {
+  outline: none;
+  margin: 20px;
+  font-size: 18px;
+}
+
+.custom {
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid #000000;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-1 {
+  background: #000000;
+  color: #ffffff;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-1:hover {
+  background: transparent;
+  color: #000000;
+}
+.btn-1:before,
+.btn-1:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #000000;
+  transition:400ms ease all;
+}
+.btn-1:after{
+  right:inherit;
+  top:inherit;
+  left: 0;
+  bottom:0;
+}
+.btn-1:hover:before,
+.btn-1:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}

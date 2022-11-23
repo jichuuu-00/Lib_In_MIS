@@ -17,16 +17,15 @@
             <div class="logo">
                 <img src="../../../static/img/lib_logo.png" alt="">
             </div>
-            <div class="banner" style="display: flex; background-color: #f2eedd; width: 100%;">
-                <img src="../../../static/img/lib_img.jpg" style="display: inline-block; width: 90%; margin-left: 5%;">
+            <div class="banner">
+                <img src="../../../static/img/lib_img.jpg">
             </div>
         </div>
         <div class="content_nav">
             <div class="dot"> </div>
             <ul>
-                <a href=""><li>도서 검색</li></a>
-                <a href=""><li>도서 신청</li></a>
-                <a href=""><li>대여 / 반납 확인</li></a>
+                <a href="book_list.html"><li>도서 검색</li></a>
+                <a href="book_info.html"><li>도서 신청</li></a>
             </ul>
         </div>
         <hr>
@@ -50,7 +49,7 @@
                         {% endif %}
                     </div>
                     <div class="text">
-                        <h2>{{ book.title }}</h2>
+                        <h2 style="font-size: 15px;">{{ book.title }}</h2>
                         <p>{{ book.edition }}</p>
                         <div class="button">
                             <a href="{% url 'book:searchbook' book.isbn %}">
@@ -66,6 +65,15 @@
                 </li>
             </ul>
             {% endfor %}
+        </div>
+
+        <div id="footer">
+            <address>
+                <em><a href="" class="logo"><span class="blind"></span></a></em>
+                <em class="copy">고려대학교 세종캠퍼스</em>
+                <em class="u_cri">©</em>
+                <a href="#" class="u_cra">동동서관</a>
+            </address>
         </div>
     </div>
 </body>
