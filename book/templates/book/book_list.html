@@ -25,7 +25,7 @@
             <div class="dot"> </div>
             <ul>
                 <a href="book_list.html"><li>도서 검색</li></a>
-                <a href="book_request.html"><li>도서 신청</li></a>
+                <a href="book_info.html"><li>도서 신청</li></a>
             </ul>
         </div>
         <hr>
@@ -35,6 +35,8 @@
                 <input type="submit" id="search"/>
             </label>
         </form>
+
+        {% if book_list %}
 
         <div class="content">
             {% for book in book_list %}
@@ -52,7 +54,7 @@
                         <h2 style="font-size: 15px;">{{ book.title }}</h2>
                         <p>{{ book.edition }}</p>
                         <div class="button">
-                            <a href="book_info.html">
+                            <a href="{% url 'book:searchbook' book.isbn %}">
                                 <div class="btnText">
                                     상세 보기
                                 </div>
@@ -67,6 +69,10 @@
             {% endfor %}
         </div>
 
+            {% else %}
+            <div>검색 결과가 없습니다.</div>
+
+
         <div id="footer">
             <address>
                 <em><a href="" class="logo"><span class="blind"></span></a></em>
@@ -76,5 +82,6 @@
             </address>
         </div>
     </div>
+{% endif %}
 </body>
 </html>
