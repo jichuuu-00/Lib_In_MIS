@@ -253,3 +253,18 @@ form {
 #footer a {
     text-decoration: none;
 }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 3;
+        transform: none;
+    }
+}
+
+.banner {
+    animation: fadeIn 1s ease-in-out;
+}
