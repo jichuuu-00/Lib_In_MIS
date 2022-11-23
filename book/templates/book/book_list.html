@@ -10,7 +10,7 @@
         <div id="header">
             <div class="nav">
                 <ul>
-                    <li>{{ Member.mem_name }}님 안녕하세요!</li>
+                    <li>장동건님 안녕하세요!</li>
                     <a href="../../../accountapp/templates/mem_login.html"><li>로그아웃</li></a> <!-- 다시 로그인 화면으로 -->
                 </ul>
             </div>
@@ -35,8 +35,6 @@
                 <input type="submit" id="search"/>
             </label>
         </form>
-
-        {% if book_list %}
 
         <div class="content">
             {% for book in book_list %}
@@ -69,10 +67,6 @@
             {% endfor %}
         </div>
 
-            {% else %}
-            <div>검색 결과가 없습니다.</div>
-
-
         <div id="footer">
             <address>
                 <em><a href="" class="logo"><span class="blind"></span></a></em>
@@ -82,6 +76,5 @@
             </address>
         </div>
     </div>
-{% endif %}
 </body>
 </html>
