@@ -36,6 +36,8 @@
             </label>
         </form>
 
+        {% if book_list %}
+
         <div class="content">
             {% for book in book_list %}
             <ul class="card">
@@ -67,6 +69,10 @@
             {% endfor %}
         </div>
 
+            {% else %}
+            <div>검색 결과가 없습니다.</div>
+
+
         <div id="footer">
             <address>
                 <em><a href="" class="logo"><span class="blind"></span></a></em>
@@ -76,5 +82,6 @@
             </address>
         </div>
     </div>
+{% endif %}
 </body>
 </html>
