@@ -10,8 +10,8 @@
         <div id="header">
             <div class="nav">
                 <ul>
-                    <li>{{ Member.mem_name }}님 안녕하세요!</li>
-                    <a href="../../../accountapp/templates/accountapp/mem_login.html"><li>로그아웃</li></a> <!-- 다시 로그인 화면으로 -->
+                    <li>회원1 님 안녕하세요!</li>
+                    <a href="{% url 'accountapp:login' %}"><li>로그아웃</li></a> <!-- 다시 로그인 화면으로 -->
                 </ul>
             </div>
             <div class="logo">
@@ -42,7 +42,7 @@
                 <li>
                     <div class="img">
                         {% if book.photo %}
-                            <img src="{{ book.photo.url }}" style="width: 100px;">
+                            <img src="{{ book.photo.url }}">
                         {% else %}
                             <!-- 등록된 표지 이미지가 없을 경우 -->
                             <img src="../../../static/img/warning.png" style="background-color: #19250e;">

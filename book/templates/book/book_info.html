@@ -9,7 +9,9 @@
     <div id="wrapper">
         <div id="header">
             <div class="logo">
-                <img src="../../../static/img/lib_logo.png">
+                <a href="{% url 'book:book' %}">
+                    <img src="../../../static/img/lib_logo.png">
+                </a>
                 <hr>
             </div>
         </div>
@@ -44,10 +46,16 @@
             <!--예약 버튼 -->
             <form action="">
                 <div id="btn">
-                    <a href=""><button type="button" class="custom btn-1">예약하기</button></a>
+                    <a href=""><button type="button" class="custom btn-1" onclick="test()">예약하기</button></a>
                 </div>
             </form>
         </div>
     </div>
+
+    <script>
+        function test(){
+            alert("예약이 완료되었습니다.")
+        }
+    </script>
 </body>
 </html>
