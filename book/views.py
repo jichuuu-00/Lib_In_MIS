@@ -20,6 +20,6 @@ def book_list(request):
         'q' : q
     })
 
-def book_detail(request, pk):
-    book = Book.objects.get(pk=pk)
+def book_detail(request, isbn):
+    book = BookInfo.objects.get(isbn=isbn)
     return render(request, 'book/book_info.html', {'book':book})

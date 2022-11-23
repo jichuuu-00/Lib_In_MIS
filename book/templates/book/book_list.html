@@ -53,7 +53,7 @@
                         <h2>{{ book.title }}</h2>
                         <p>{{ book.edition }}</p>
                         <div class="button">
-                            <a href={% url 'book:searchbook' book.title %}>
+                            <a href="{% url 'book:searchbook' book.isbn %}">
                                 <div class="btnText">
                                     상세 보기
                                 </div>
