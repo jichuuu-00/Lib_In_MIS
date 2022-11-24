@@ -11,7 +11,7 @@ def book_list(request):
     qs = BookInfo.objects.all().order_by('-public_year')
     q = request.GET.get('q', '')
     if q:
-        qs = qs.filter(Q(title__icontains=q)|Q(description__icontains=q))
+        qs = qs.filter(title__icontains=q)
     # render의 첫번째 인자는 view 함수의 request인자를 그대로 넘겨줌
     # 두번째 인자는 템플릿명
     # 세번째 인자로 dictionary로 qs라는 값을 참조할텐데 참조할 이름 지정
